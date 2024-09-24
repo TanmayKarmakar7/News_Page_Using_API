@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container">
+            <a href="" class="logo"><img src="logo.png" alt="Logo"><h1>Everyday News</h1></a>
+            
+            <div class="nav-links">
+                <ul>
+                    <li class="hover-link nav-items" id="india" onclick="onNavItemClick('india')">India</li>
+                    <li class="hover-link nav-items" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+                    <li class="hover-link nav-items" id="cricket" onclick="onNavItemClick('cricket')">Cricket</li>
+                    <li class="hover-link nav-items" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="news-input" placeholder="eg: Science">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="cards-container">
+
+        </div>
+    </main>
+    <template class="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="" class="news-img">
+            </div>
+            <div class="card-content">
+                <h3 class="news-title">This is the title</h3>
+                <h6 class="news-source">lorem 10/09/2024</h6>
+                <p class="news-description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos nesciunt voluptates non corrupti ipsum ut perferendis neque saepe ullam aspernatur.
+                </p>
+            </div>
+        </div>
+    </template>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
